@@ -12,6 +12,7 @@ body{
 	font-family: consolas; 
 }
 
+
 .header{
 	display:flex;
 	background-color: black;
@@ -106,6 +107,18 @@ background: linear-gradient(315deg,#6E44E4,#EB1414)
 .container .box:nth-child(8):before{
 background: linear-gradient(315deg,#DDDDCA,#93FBC5)
 }
+.container .box:nth-child(9):before{
+background: linear-gradient(315deg,#18E326,#FF0004)
+}
+.container .box:nth-child(10):before{
+background: linear-gradient(315deg,#39FB04,#FB4204)
+}
+.container .box:nth-child(11):before{
+background: linear-gradient(315deg,#0324A5,#AB02D9)
+}
+.container .box:nth-child(12):before{
+background: linear-gradient(315deg,#6E44E4,#EB1414)
+}
 .container .box:after{
 	content: '';
 	position: absolute;
@@ -148,7 +161,7 @@ background: linear-gradient(315deg,#DDDDCA,#93FBC5)
 .box .content p{
 	margin: 0;
 	padding: 0;
-	color: #611800;
+	color: #fff;
 	font-size: 16px;
 
 }
@@ -178,8 +191,61 @@ background: linear-gradient(315deg,#DDDDCA,#93FBC5)
 	background: #fff;
 }
 
-.header .sticky{
-	color: #fff;
+.popup {
+  position: relative;
+  background-color: red;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px 10px;
+  font-size:20px;
+  text-align: center;
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 470px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 30px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -230px;
+  left: 40%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 @media only screen and (max-width: 780px){
@@ -204,4 +270,16 @@ background: linear-gradient(315deg,#DDDDCA,#93FBC5)
 		margin: auto;
 		margin-top: 12px;
 	}
+		.popup .popuptext {
+		align-items: center;
+		width: 520px;
+		top: 140px;
+		height: 150px;
+		left: 75px;
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
 }
