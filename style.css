@@ -193,12 +193,17 @@ background: linear-gradient(315deg,#6E44E4,#EB1414)
 
 .popup {
   position: relative;
-  background-color: red;
   cursor: pointer;
-  align-items: center;
-  padding: 10px 10px;
+  justify-content: center;
   font-size:20px;
-  text-align: center;
+  display: inline-block;
+	background-color: red;
+	margin-left: 45%;
+	padding: 6px;
+	margin-top: 10px;
+	color: white;
+	border-radius: 10px;
+	
 
 }
 
@@ -209,13 +214,14 @@ background: linear-gradient(315deg,#6E44E4,#EB1414)
   background-color: #555;
   color: #fff;
   text-align: center;
+  align-content: center;
   border-radius: 6px;
   padding: 30px 0;
   position: absolute;
   z-index: 1;
   bottom: -230px;
-  left: 40%;
-  margin-left: -80px;
+  left: -80%;
+  margin-left: -90%;
 }
 
 /* Popup arrow */
@@ -272,12 +278,16 @@ background: linear-gradient(315deg,#6E44E4,#EB1414)
 	}
 		.popup .popuptext {
 		align-items: center;
-		width: 520px;
+		width: 200px;
 		top: 140px;
-		height: 150px;
-		left: 75px;
+		height: 100px;
+		margin-left: 35%;
+		justify-content: center;
+		text-align: center;
 		display: flex;
+		flex-wrap: nowrap;
 		flex-direction: column;
+
 
 
 	}
