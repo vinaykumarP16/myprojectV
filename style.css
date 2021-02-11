@@ -276,6 +276,12 @@ background: linear-gradient(315deg,#6E44E4,#EB1414)
 		margin: auto;
 		margin-top: 12px;
 	}
+		
+	.popup{
+		align-items:center;
+		margin-left:45%;
+	}
+	
 		.popup .popuptext {
 		align-items: center;
 		width: 200px;
